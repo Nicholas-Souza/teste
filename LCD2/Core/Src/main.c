@@ -48,7 +48,9 @@ TIM_HandleTypeDef htim1;
 /* USER CODE BEGIN PV */
 uint16_t app;
 uint16_t app_t;
-char i[16] = {"algumacoisa"};
+
+char i[16] = {"zico     gostosa"};
+
 
 /* USER CODE END PV */
 
@@ -82,10 +84,10 @@ void __init_application(){
 	  lcd_init();
 	  lcd_clear();
 
-	  lcd_put_cur(1, 4);
+	  lcd_put_cur(1, 8);
 	  lcd_send_string("PADO");
 
-	  lcd_put_cur(2, 4);
+	  lcd_put_cur(2, 8);
 	  lcd_send_string("LABS");
 	  HAL_Delay(1000);
 }
